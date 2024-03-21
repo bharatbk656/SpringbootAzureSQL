@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:sqlserver://springbootazure.database.windows.net:1433;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: springbootazure
+    password: Qwerty@656
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+server:
+  port: 8081
