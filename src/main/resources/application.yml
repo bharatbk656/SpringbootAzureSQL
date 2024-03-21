@@ -3,8 +3,9 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
+      dialect: org.hibernate.dialect.SQLServer2012Dialect
   datasource:
-    url: jdbc:sqlserver://springbootazure.database.windows.net:1433;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    url: jdbc:sqlserver://springbootazure.database.windows.net:1433;database=SpringbootAzureDB;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
     username: springbootazure
     password: Qwerty@656
     driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
