@@ -25,7 +25,6 @@ public class SpringAzureRestPocApplication {
     public List<UserDetails> addUserDetails(){
         return userDetailsRepository.findAll();
     }
-
     public static void main(String[] args) {
         SpringApplication.run(SpringAzureRestPocApplication.class, args);
     }
